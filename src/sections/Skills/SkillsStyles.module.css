@@ -47,3 +47,25 @@ hr {
     width: 300px;
   }
 }
+
+/* SkillsStyles.module.css */
+
+.container {
+  /* Center the content and add padding if needed */
+  text-align: center;
+  padding: 1rem;
+}
+
+.skillsImage {
+  max-width: 100%; /* Ensure the image does not exceed the container width */
+  height: auto;    /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add some border-radius */
+  /* Add a margin to ensure spacing around the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.sectionTitle {
+  /* Styles for the section title */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

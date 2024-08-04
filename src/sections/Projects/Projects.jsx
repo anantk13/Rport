@@ -1,8 +1,8 @@
 import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/blog_dark.png';
-import freshBurger from '../../assets/Streamify.png';
+import viberr from '../../assets/edulogo.png';
+import freshBurger from '../../assets/barista.jpg';
 import hipsster from '../../assets/BetterCare.png';
-import fitLift from '../../assets/nike_logo.png';
+// import fitLift from '../../assets/nike_logo.png';
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -12,27 +12,21 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={freshBurger}
-          link="https://videotube-rust.vercel.app/"
-          h3="Streamify"
-          p="Video Streaming App"
+          link="https://visitor-form-rohityadav21s-projects.vercel.app/"
+          h3="Barista Visitor Form"
+          p="Visitor Form"
         />
         <ProjectCard
           src={viberr}
-          link="https://appwrite-blog-two-opal.vercel.app/"
-          h3="Blogs"
-          p="Blogging Web App"
+          link="https://ed-tutor-website-mq4y.vercel.app/"
+          h3="Edutor"
+          p="A Tutoring Website"
         />
         <ProjectCard
           src={hipsster}
           link="https://better-care-tau.vercel.app/"
           h3="BetterCare"
           p="A Health Care App"
-        />
-        <ProjectCard
-          src={fitLift}
-          link="https://project-nike-amber.vercel.app/"
-          h3="Nike"
-          p="Fitness App"
         />
       </div>
     </section>

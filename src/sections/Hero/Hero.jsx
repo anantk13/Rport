@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/profile-pic.png';
+import heroImg from '../../assets/profile.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import twitterLight from '../../assets/twitter-light.svg';
@@ -36,19 +36,17 @@ function Hero() {
       </div>
       <div className={styles.info}>
         <h1>
-          Harinadh
-          <br />
-          Hanumanthu
+          Rohit yadav
         </h1>
         <h2>Full Stack Web Developer</h2>
         <span>
-          <a href="https://x.com/h_harinadh_" target="_blank">
+          <a href="https://x.com/rohitya90588246" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
           </a>
-          <a href="https://github.com/Eccentric-Harry" target="_blank">
+          <a href="https://github.com/Rohityadav21" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://www.linkedin.com/in/h-harinadh/" target="_blank">
+          <a href="https://www.linkedin.com/in/rohit-yadav36001" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>

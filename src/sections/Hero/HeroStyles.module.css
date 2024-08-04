@@ -9,6 +9,34 @@
 
   .hero {
     max-width: 200px;
+    width: 100%; /* Ensure responsiveness */
+    position: relative; /* Ensure child elements are positioned relative to this */
+  }
+
+  .colorModeContainer {
+    position: relative;
+  }
+
+  .colorMode {
+    position: absolute;
+    top: 10px; /* Adjust the top distance as needed */
+    right: 10px; /* Adjust the right distance as needed */
+    width: 25px;
+    cursor: pointer; /* Add cursor pointer for better UX */
+  }
+
+  .description {
+    max-width: 24ch; /* Limit the width of the text */
+    text-align: center; /* Center align text */
+    margin: 0 auto; /* Center the paragraph horizontally */
+    padding: 0 10px; /* Add padding for better spacing on mobile */
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Center align items */
   }
 
   span {
@@ -53,31 +81,19 @@
   }
 }
 
-.colorModeContainer {
-  position: relative;
+/* Media Queries */
+
+/* Tablets and larger screens */
+@media (min-width: 600px) {
+  .container {
+    .hero {
+      max-width: 250px;
+    }
+  }
 }
 
-.colorMode {
-  position: absolute;
-  right: 0;
-  width: 25px;
-}
-
-.colorMode:hover {
-  cursor: pointer;
-}
-
-.description {
-  max-width: 24ch;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-@media (width >= 800px) {
+/* Desktop screens and larger */
+@media (min-width: 800px) {
   .container {
     flex-direction: row-reverse;
     align-items: center;
@@ -90,7 +106,8 @@
   }
 }
 
-@media (width >= 1400px) {
+/* Large desktop screens and larger */
+@media (min-width: 1400px) {
   .container {
     .hero {
       max-width: 400px;
